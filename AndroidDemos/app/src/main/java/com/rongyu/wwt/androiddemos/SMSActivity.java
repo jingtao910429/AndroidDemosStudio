@@ -45,10 +45,6 @@ public class SMSActivity extends AppCompatActivity implements View.OnClickListen
         Button sendMessageBtn = (Button)findViewById(R.id.sms_btn);
         sendMessageBtn.setOnClickListener(this);
 
-        //高级组件部分
-        Button highCompentBtn = (Button)findViewById(R.id.high_compent);
-        highCompentBtn.setOnClickListener(this);
-
     }
 
     /**
@@ -109,23 +105,12 @@ public class SMSActivity extends AppCompatActivity implements View.OnClickListen
         sendMessage(phoneStr,contentStr);
     }
 
-    //高级控件部分
-    public void highCompentBtnClick() {
-
-        Intent highCompentIntent = new Intent(SMSActivity.this,AdvancedComponentActivity.class);
-        startActivity(highCompentIntent);
-
-    }
-
     @Override
     public void onClick(View v) {
 
         switch (v.getId()) {
             case R.id.sms_btn:
                 sendSMS();
-                break;
-            case R.id.high_compent:
-                highCompentBtnClick();
                 break;
             default:
                 break;

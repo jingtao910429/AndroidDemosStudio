@@ -75,8 +75,6 @@ public class FileSaveToMemoryActivity extends AppCompatActivity {
         if (forgetPasswordCheckBox.isChecked()){
             //如果是记住密码，则存储密码到内存中
             LoginHandle.saveUserInfo(userName,passWord,this);
-        }else{
-
         }
     }
 

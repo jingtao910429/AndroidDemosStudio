@@ -7,34 +7,37 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:showIn="@layout/activity_dail_phone" tools:context=".DailPhoneActivity">
+    tools:showIn="@layout/activity_main" tools:context="com.rongyu.wwt.androiddemos.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="请输入手机号"
-        android:id="@+id/dail_phone"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true" />
-
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="phone"
-        android:ems="10"
-        android:id="@+id/ed_dail_phone"
-        android:layout_below="@id/dail_phone"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true" />
-
-    <!-- 点击事件也可以配置在xml中 -->
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="拨打电话"
-        android:id="@+id/btn_dail_phone"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="58dp"
-        android:layout_centerVertical="true" />
+        android:text="@string/main_dailBtn"
+        android:id="@+id/main_dailbtn"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="发短信"
+        android:id="@+id/main_sendMessage"
+        android:layout_below="@+id/main_dailbtn"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/main_storeBtn"
+        android:id="@+id/main_storeBtn"
+        android:layout_below="@+id/main_sendMessage"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/main_advancedCompent"
+        android:id="@+id/mian_advancedCompent"
+        android:layout_below="@+id/main_storeBtn"
+        android:layout_alignEnd="@+id/main_storeBtn" />
 </RelativeLayout>

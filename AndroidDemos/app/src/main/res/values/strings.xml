@@ -13,4 +13,13 @@
     <string name="login">登录</string>
     <string name="highCompent">高级组件</string>
     <string name="store_data">数据存储</string>
+    <string name="title_activity_auto_complete_text_view">AutoCompleteTextViewActivity</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="main_dailBtn">打电话</string>
+    <string name="main_storeBtn">文件存储</string>
+    <string name="main_advancedCompent">高级组建</string>
+    <string name="title_activity_spinner">SpinnerActivity</string>
+    <string name="title_activity_date_time_picker">DateTimePickerActivity</string>
+    <string name="title_activity_dates_picker">DatesPickerActivity</string>
+    <string name="title_activity_time_picker_view">TimePickerView</string>
 </resources>

@@ -10,4 +10,37 @@
     tools:showIn="@layout/activity_advanced_component"
     tools:context="com.rongyu.wwt.androiddemos.AdvancedComponentActivity">
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AutoCompleteTextView自动完成文本框"
+        android:id="@+id/autoCompeleteTV"
+        android:layout_alignParentTop="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="spinner列表选择框"
+        android:id="@+id/spinner"
+        android:layout_below="@+id/autoCompeleteTV"
+        android:layout_alignEnd="@+id/autoCompeleteTV"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="日期"
+        android:id="@+id/date_pickerBtn"
+        android:layout_below="@+id/spinner"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@id/spinner" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="时间"
+        android:id="@+id/timeBtn"
+        android:layout_below="@+id/date_pickerBtn"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/date_pickerBtn" />
 </RelativeLayout>

@@ -22,4 +22,5 @@
     <string name="title_activity_date_time_picker">DateTimePickerActivity</string>
     <string name="title_activity_dates_picker">DatesPickerActivity</string>
     <string name="title_activity_time_picker_view">TimePickerView</string>
+    <string name="title_activity_progress_bar">ProgressBar</string>
 </resources>

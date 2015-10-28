@@ -14,6 +14,7 @@ import android.widget.Toast;
 
 import com.rongyu.wwt.advancedCompent.AutoCompleteTextViewActivity;
 import com.rongyu.wwt.advancedCompent.DatesPickerActivity;
+import com.rongyu.wwt.advancedCompent.ProgressBarActivity;
 import com.rongyu.wwt.advancedCompent.SpinnerActivity;
 import com.rongyu.wwt.advancedCompent.TimePickerActivity;
 
@@ -27,7 +28,8 @@ public class AdvancedComponentActivity extends AppCompatActivity implements View
         AutoCompleteTextView,
         Spinner,
         DatePicker,
-        TimerPicker
+        TimerPicker,
+        ProgressBar
     };
 
     @Override
@@ -59,6 +61,9 @@ public class AdvancedComponentActivity extends AppCompatActivity implements View
         Button timePicker = (Button)findViewById(R.id.timeBtn);
         timePicker.setOnClickListener(this);
 
+        Button progressBar = (Button)findViewById(R.id.btn_progress);
+        progressBar.setOnClickListener(this);
+
     }
 
     @Override
@@ -78,6 +83,8 @@ public class AdvancedComponentActivity extends AppCompatActivity implements View
             case R.id.timeBtn:
                 jumpActivity(ActivityType.TimerPicker);
                 break;
+            case R.id.btn_progress:
+                jumpActivity(ActivityType.ProgressBar);
             default:
                 break;
         }
@@ -104,6 +111,9 @@ public class AdvancedComponentActivity extends AppCompatActivity implements View
             case TimerPicker:
                 jumpIntent = new Intent(AdvancedComponentActivity.this, TimePickerActivity.class);
                 break;
+            //进度
+            case ProgressBar:
+                jumpIntent = new Intent(AdvancedComponentActivity.this, ProgressBarActivity.class);
             default:
                 break;
         }

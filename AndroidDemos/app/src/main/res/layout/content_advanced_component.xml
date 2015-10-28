@@ -43,4 +43,13 @@
         android:layout_below="@+id/date_pickerBtn"
         android:layout_alignParentStart="true"
         android:layout_alignEnd="@+id/date_pickerBtn" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="进度"
+        android:id="@+id/btn_progress"
+        android:layout_below="@id/timeBtn"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@id/timeBtn" />
 </RelativeLayout>
